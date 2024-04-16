@@ -1,0 +1,319 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for Body  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Styling for Anchor (link)  */
+a {
+    color: #ff105f;
+    text-decoration: none;
+}
+
+/* Styling for container  */
+.container {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+/* Styling for Main container */
+.main-container {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Styling for project box */
+.projects-box {
+    width: 75vh;
+    height: 65vh;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-left: 10%;
+}
+
+/* Styling for form box */
+.form-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Styling for header section */
+#headers {
+    width: 215px;
+    margin: 15px auto 0 auto;
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+/* Styling for headers */
+h1 {
+    display: inline-flex;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+/* Styling for sign in text */
+#sign-in {
+    left: 50px;
+    position: relative;
+}
+
+/* Styling for sign up text */
+#sign-up {
+    left: 450px;
+    position: relative;
+}
+
+/* Styling for project list */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for project list rows */
+.project-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for project list row hover */
+.project-list li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styling for project details */
+.project-details {
+    margin-top: 20px;
+}
+
+/* Styling for project details h3 */
+.project-details h3 {
+    margin-bottom: 10px;
+}
+
+/* Styling for inner form container */
+#form-inner {
+    padding: 0px 10px 10px 10px ;
+}
+
+/* Styling for button box */
+#button-box {
+    width: 215px;
+    margin: 0 auto 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+/* Styling for toggle button login/register */
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+/* Styling for btn */
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 105px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* Styling for input groups */
+.input-group {
+    position: absolute;
+    width: 270px;
+    transition: 0.5s;
+}
+
+/* Styling for general input and date fields */
+.input-field,
+.date-field {
+    width: 90%;
+    padding: 10px 0; 
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+}
+
+/* Styling for submit buttons */
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin: 25px auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+/* Styling for shovering over submit button */
+.submit-btn:hover {
+    background: linear-gradient(to right, #ffad06, #ff105f);
+}
+
+/* Styling for login button */
+#login {
+    left: 40px;
+}
+
+/* Styling for register buton */
+#register {
+    left: 450px;
+    top: 140px;
+}
+
+/* Styling for error messages */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; 
+}
+
+/* Styling for phase label */
+label#phase {
+    width: 110px;
+    transform: translateX(-5px);
+}
+
+/* Styling for phase selection */
+select#phase {
+    width: 140px;
+}
+
+/* Styling for user label   */
+label#user {
+    width: 110px;
+}
+
+/* Styling for user row in form  */
+.form-row#user {
+    transform: translateX(-5px);
+}
+
+/* Styling for phase and user form */
+.form-row#phase,
+.form-row#user {
+    gap: 55px;
+}
+
+/* Styling for user selection */
+select#user {
+    width: 145px;
+}
+
+/* Styling for tables */
+table {
+    margin: 0 auto; 
+    width: 90%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Styling for table headers and cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: left;
+    font-size: 14px; 
+}
+
+/* Styling for table headers */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Styling for table rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styling for table row hover */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Styling for add project button */
+.add-project-btn {
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition:  0.5s;
+    text-decoration: none;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Styling for add project button hover  */
+.add-project-btn:hover {
+    background-color: #ffad06;
+}
+
+/* Styling for project section  */
+#projects {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
